@@ -12,7 +12,7 @@ mysql
 Instrucciones:
 1. Descompimir proyecto_contacto.rar en la ruta C:xampp/htdocs
 2. Ejecutar xampp, iniciar los servicios Apache y Mysql
-3. Abrir otra pestaña del navegador y escribir "http://localhost/proyecto_contactos/private/"
+3. Abrir otra pestaña del navegador y escribir "http://localhost/proyecto_main/private/"
 
 
 Instrucciones para base de datos:
