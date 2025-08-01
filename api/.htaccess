@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Autoriza encabezado Authorization
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+
+# Redirección si no es archivo físico ni carpeta
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Reescritura de endpoints
+RewriteRule ^guardarDatosContacto$ services_contactos.php?accion=guardar [L,QSA]
+RewriteRule ^consultarDatosContacto$ services_contactos.php?accion=consultar [L,QSA]
+RewriteRule ^eliminarDatosContacto$ services_contactos.php?accion=eliminar [L,QSA]
