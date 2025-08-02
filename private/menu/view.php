@@ -4,7 +4,11 @@
         <li class="nav-item active pt-4">
         <a
             data-bs-toggle="collapse"
+<<<<<<< HEAD
             href="http://localhost/proyecto_motos/private/"
+=======
+            href="http://localhost/proyecto-main/private/"
+>>>>>>> 5218a59 (Cuarto commit)
             class="collapsed"
             aria-expanded="false"
         >

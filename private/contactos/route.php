@@ -39,4 +39,18 @@ if ($action == 'filtrarContactos') {
     $result = json_encode($res);
 }
 
+<<<<<<< HEAD
+=======
+if ($action == 'editarContacto') {
+    $resp = viewContactos::Contactos($_POST['contacto_nombre']);
+    if ($resp) {
+        $res = array('code' => '200', 'message' => 'Contacto editado exitosamente.', 'html' => $resp);
+    } else {
+        $res = array('code' => '501', 'message' => 'Error al editar el contacto.');
+    }
+
+    $result = json_encode($res);
+}
+
+>>>>>>> 5218a59 (Cuarto commit)
 echo $result;

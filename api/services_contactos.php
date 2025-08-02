@@ -61,6 +61,11 @@ switch ($accion) {
     case 'eliminar':
         eliminar_contacto($data, $conn);
         break;
+<<<<<<< HEAD
+=======
+    case 'editard':
+        editar_contacto($data, $conn);
+>>>>>>> 5218a59 (Cuarto commit)
     default:
         echo json_encode(['error' => 'Acción no válida']);
         break;
@@ -140,6 +145,26 @@ function eliminar_contacto($data, $conn)
     }
 }
 
+<<<<<<< HEAD
+=======
+function editar_contacto($data, $conn)
+{
+    $id = intval($data['contacto_id'] ?? 0);
+    if ($id <= 0) {
+        echo json_encode(['error' => 'ID inválido']);
+        return;
+    }
+
+    $sql = "UPDATE contactos SET contacto_nombre='$contacto_nombre', contacto_correo='$contacto_correo', contacto_telefono='$contacto_telefono' WHERE contacto_id = '$id_contacto'";
+    echo $sql;die;
+    if ($conn->query($sql)) {
+        echo json_encode(['success' => true]);
+    } else {
+        echo json_encode(['error' => $conn->error]);
+    }
+}
+
+>>>>>>> 5218a59 (Cuarto commit)
 function validar_token($jwt, $clave)
 {
     $partes = explode('.', $jwt);

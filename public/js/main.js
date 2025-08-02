@@ -9,6 +9,10 @@ async function iniciarEventos() {
   registrarContacto();
   eliminarContacto();
   FitrarContactos();
+<<<<<<< HEAD
+=======
+  editarContacto();
+>>>>>>> 5218a59 (Cuarto commit)
 
   return 1;
 }
@@ -173,3 +177,47 @@ function FitrarContactos() {
     });
   });
 }
+<<<<<<< HEAD
+=======
+
+function editarContacto() {
+  $("body").on("click", "#editar_contacto", function () {
+    let contacto_nombre = document.getElementById("contacto_nombre").value;
+    let contacto_correo = document.getElementById("contacto_correo").value;
+    let contacto_telefono = document.getElementById("contacto_telefono").value;
+
+    let formData = new FormData();
+    formData.append("action", "editarContacto");
+    formData.append("contacto_nombre", contacto_nombre);
+    formData.append("contacto_correo", contacto_correo)
+    formData.append("contacto_telefono", contacto_telefono);
+
+    $.ajax({
+      method: "POST",
+      url: internal_url,
+      data: formData,
+      dataType: "json",
+      processData: false,
+      contentType: false,
+      beforeSend: function () {
+        $(".btn-close").trigger("click");
+      },
+      success: async function (data) {
+        console.log(data);
+        var code = data.code;
+        var mensaje = data.message;
+        var html = decodeURIComponent(data.html);
+        if (code === "200") {
+          alertify.set("notifier", "position", "top-center");
+          alertify.success(mensaje, 10);
+          contenedor.html(html);
+        } else {
+          alertify.set("notifier", "position", "top-center");
+          alertify.error(mensaje, 10);
+        }
+        return 2;
+      },
+    });
+  });
+}
+>>>>>>> 5218a59 (Cuarto commit)

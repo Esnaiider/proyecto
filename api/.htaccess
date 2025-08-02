@@ -12,3 +12,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^guardarDatosContacto$ services_contactos.php?accion=guardar [L,QSA]
 RewriteRule ^consultarDatosContacto$ services_contactos.php?accion=consultar [L,QSA]
 RewriteRule ^eliminarDatosContacto$ services_contactos.php?accion=eliminar [L,QSA]
+<<<<<<< HEAD
+=======
+RewriteRule ^editarDatosContacto$ services_contactos.php?accion=editar [L,QSA]
+>>>>>>> 5218a59 (Cuarto commit)

@@ -45,6 +45,20 @@ function select($query, $params = []) {
     }
 }
 
+<<<<<<< HEAD
+=======
+function update($query, $params) {
+    try {
+        $pdo = conexion();
+        $stmt = $pdo->prepare($query);
+        $stmt->execute($params);
+        return $stmt->rowCount(); // número de filas eliminadas
+    } catch (PDOException $e) {
+        return "Error en delete: " . $e->getMessage();
+    }
+}
+
+>>>>>>> 5218a59 (Cuarto commit)
 function delete($query, $params) {
     try {
         $pdo = conexion();

@@ -122,7 +122,11 @@ function getContenido($data){
         <div class="sidebar-logo">
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
+<<<<<<< HEAD
             <a href="http://localhost/proyecto_contactos/private/index.php" class="logo">
+=======
+            <a href="http://localhost/proyecto-main/private/index.php" class="logo">
+>>>>>>> 5218a59 (Cuarto commit)
               <img
                 src="../public/images/contactos.png"
                 alt="navbar brand"

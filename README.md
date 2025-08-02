@@ -10,10 +10,22 @@ xampp: 3.3.0
 mysql
 
 Instrucciones:
+<<<<<<< HEAD
 1. Descompimir proyecto-main.rar en la ruta C:xampp/htdocs
 2. En la carpeta llamada "proyecto-main" hay otra carpeta con el mismo nombre, solo se debe sacar esa segunda carpeta y pegarla directamente en C:xampp/htdocs y asi evitariamos error
 3. Ejecutar xampp, iniciar los servicios Apache y Mysql
 4. Abrir otra pestaña del navegador y escribir "http://localhost/proyecto-main/private/"
+=======
+<<<<<<< HEAD
+1. Descompimir proyecto-main.rar en la ruta C:xampp/htdocs
+2. Ejecutar xampp, iniciar los servicios Apache y Mysql
+3. Abrir otra pestaña del navegador y escribir "http://localhost/proyecto-main/private/"
+=======
+1. Descompimir proyecto_contacto.rar en la ruta C:xampp/htdocs
+2. Ejecutar xampp, iniciar los servicios Apache y Mysql
+3. Abrir otra pestaña del navegador y escribir "http://localhost/proyecto_contactos/private/"
+>>>>>>> 0ef8092 (Tercer commit)
+>>>>>>> 5218a59 (Cuarto commit)
 
 
 Instrucciones para base de datos:
@@ -21,6 +33,10 @@ Instrucciones para base de datos:
 2. Ir a xampp y en el servicio Mysql presionar en Admin
 3. En la pestaña que se abre en el navegador buscar el apartado "SQL" el cual esta en la parte superior
 4. Ahora debe estar en una vista parecida a una hoja en blanco, copiar el contenido del archivo .txt mencionado en el 1 punto y pegarlo ahí, luego presionar en continuar y ya estaria creada la base de datos
+<<<<<<< HEAD
+=======
+>>>>>>> 168d8ce (Primer commit)
+>>>>>>> 5218a59 (Cuarto commit)
 =======
 # Kaiadmin Lite - Free Bootstrap 5 Admin Dashboard
 ![kaiadminlitethumb (1)](https://github.com/Hizrian/kaiadmin-lite/assets/10692084/4793c6b9-7991-4502-8633-14d9ed0ea486)

@@ -4,6 +4,10 @@ class ServicesAPI
     private $server_url_guardar_datos_contacto;
     private $server_url_consultar_datos_contacto;
     private $server_url_eliminar_datos_contacto;
+<<<<<<< HEAD
+=======
+    private $server_url_editar_datos_contacto;
+>>>>>>> 5218a59 (Cuarto commit)
     private $token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.KMUFsIDTnFmyG3nMiGM6H9FNFUROf3wh7SmqJp-QV30';
 
     public function __construct()
@@ -17,6 +21,10 @@ class ServicesAPI
         $this->server_url_guardar_datos_contacto = $url_server . 'guardarDatosContacto';
         $this->server_url_consultar_datos_contacto = $url_server . 'consultarDatosContacto';
         $this->server_url_eliminar_datos_contacto = $url_server . 'eliminarDatosContacto';
+<<<<<<< HEAD
+=======
+        $this->server_url_editar_datos_contacto = $url_server . 'editarDatosContacto';
+>>>>>>> 5218a59 (Cuarto commit)
     }
 
     public function services_guardar_contacto($params)
@@ -46,6 +54,18 @@ class ServicesAPI
         return $this->ejecutarApi($url, $params, $authorization);
     }
 
+<<<<<<< HEAD
+=======
+    public function services_editar_contacto($params)
+    {
+        $url = $this->server_url_editar_datos_contacto;
+
+        $authorization = 'Bearer ' . $this->token;
+
+        return $this->ejecutarApi($url, $params, $authorization);
+    }
+
+>>>>>>> 5218a59 (Cuarto commit)
 
     public function ejecutarApi($url, $body, $authorization = "")
     {

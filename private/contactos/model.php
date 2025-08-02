@@ -55,4 +55,17 @@ class ModelContactos
 
         return $resp;
     }
+<<<<<<< HEAD
+=======
+
+    public static function editar_contacto($contacto_nombre){
+
+        $_service = new ServicesAPI();
+
+        $body = array('contacto_nombre' => $contacto_nombre);
+        $resp = $_service->services_editar_contacto($body);
+
+        return $resp;
+    }
+>>>>>>> 5218a59 (Cuarto commit)
 }
