@@ -9,11 +9,7 @@ class ServicesAPI
     public function __construct()
     {
         if ($_SERVER['SERVER_NAME'] === 'localhost') {
-<<<<<<< HEAD
-            $url_server = 'http://localhost/proyecto_contactos/api/';
-=======
             $url_server = 'http://localhost/proyecto-main/api/';
->>>>>>> 0ef8092 (Tercer commit)
         } else {
             $url_server = 'https://www.dominio.com/api/';
         }
