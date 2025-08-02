@@ -10,7 +10,7 @@ xampp: 3.3.0
 mysql
 
 Instrucciones:
-1. Descompimir proyecto_contacto.rar en la ruta C:xampp/htdocs
+1. Descompimir proyecto-main.rar en la ruta C:xampp/htdocs
 2. Ejecutar xampp, iniciar los servicios Apache y Mysql
 3. Abrir otra pestaña del navegador y escribir "http://localhost/proyecto-main/private/"
 
